@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		h1 {
+			color: red;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<title>What is Full Stck Web Development?</title>
+	</head>
+	<body>
+		<h1> My heading : Full Stack Development </h1>
+		<p> In this book we will learn about Full Stack Development. </p>
+		<p> 
+			If you read 5 pages per day for 30 days, you will complete <span id="result"> </span> pages.
+		</p>
+		<script>
+			var pagesperday = 5;
+			var readingdays = 30;
+			var daysneeded =pagesperday * readingdays;
+			document.getElementById("result").innerHTML = daysneeded;
+		</script>
+	</body>
+</html>
