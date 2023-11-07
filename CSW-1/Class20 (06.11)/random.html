@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>After & Before</title>
+		<style>
+			table, tr, th, td {
+				border: 2px solid black;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#b1").click(function(){
+					$("#row1").empty();
+				});
+				$("#b2").click(function(){
+					$("#column1").empty();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr id="column1">
+				<th>Sl.No</th>
+				<th>Name</th>
+				<th>Redg. No.</th>
+			</tr>
+			<tr id="row1">
+				<td>1.</td>
+				<td>Sonu</td>
+				<td>455</td>
+			</tr>
+			<tr id="row1">
+				<td>2.</td>
+				<td>Sanu</td>
+				<td>487</td>
+			</tr>
+			<tr id="row1">
+				<td>3.</td>
+				<td>Yash</td>
+				<td>497</td>
+			</tr>
+		</table>
+	
+		<br><br>
+		<button id="b1">Delete Row</button>
+		<button id="b2">Delete Column</button>
+	</body>
+</html>
