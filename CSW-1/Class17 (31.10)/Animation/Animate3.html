@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animate 3</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("div").animate({
+						width: 'toggle'
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>Click the button repeatedly to check its impact.</p>
+		<button>Toggle the Animation</button>
+		<div style="background:dodgerblue;height:50px;width:50px;position:absolute;">
+		</div>
+	</body>
+</html>
