@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DblClick Event</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("h1,h2,h3").dblclick(function(){
+					$(this).hide();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>First Heading</h1>
+		<h2>Second Heading</h2>
+		<h3>Third Heading</h3>
+		<p>This time, a single click is not enough. You have to double-click a heading to hide it.</p>
+	</body>
+</html>
