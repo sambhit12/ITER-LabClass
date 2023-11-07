@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Children() method</title>
+		<style>
+			.innermost * {
+				display: block;
+				border: 1px solid green;
+				color: lightgreen;
+				padding: 6px;
+				margin: 18px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("div").children().css({"color": "blue", "border": "3px solid red"});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="innermost" style="width:300px;">div (current element)
+		<p>p (child)
+			<span>span (grandchild)</span>
+		</p>
+		<p>p (child)
+			<span>span (grandchild)</span>
+		</p>
+		</div>
+	</body>
+</html>
