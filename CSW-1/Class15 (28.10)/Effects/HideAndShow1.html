@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hide and Show - 1</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$(".a").hide(3000);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button>Hide</button>
+		<h1 class ="a">The Hidden Heading </h1>
+		<p class="a">These paragraphs and the single heading will hide 3 seconds after:</p>
+		<p class="a">A user clicks on the button. </p>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hide and Show Method</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#a").click(function(){
+					$("p").hide();
+				});
+				$("#b").click(function(){
+					$("p").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>If the Disappear button is clicked, then the paragraph would disappear.</p>
+		<p>If the Appear button is clicked, then the paragraph would appear again.</p>
+		<button id="a">Disappear</button>
+		<button id="b">Appear</button>
+	</body>
+</html>
