@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Append method</title>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("#b1").click(function(){
+		 			$("p").append("<b>New Content</b>.");
+				});
+				$("#b2").click(function(){
+					$("ul").append("<li>Soup</li>");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>This is the first paragraph.</p>
+		<p>This is the second paragraph.</p>
+		<ul>
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Water</li>
+		</ul>
+		<button id="b1">Append content at the end of paragraph.</button>
+		<button id="b2">Append item at the end of the list.</button>
+	</body>
+</html>
