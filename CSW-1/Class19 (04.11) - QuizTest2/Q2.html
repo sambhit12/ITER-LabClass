@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Question 2</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<style>
+			.first {
+				height: 50px;
+				width: 50px;
+				background-color: red;
+				margin: 5px;
+				position: relative;
+			}
+			.second {
+				height: 50px;
+				width: 50px;
+				background-color: orange;
+				margin: 5px;
+				position: relative;
+			}
+			.third {
+				height: 50px;
+				width: 50px;
+				background-color: green;
+				margin: 5px;
+				position: relative;
+				$(".third").animate({left: '500px'});
+				
+			}
+		</style>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$(".first").animate({left: '500px'}, 5000);
+					$("button").click(function(){
+						$(".second").animate({left: '500px'}, 3000);
+							$("button").click(function(){
+								$(".third").animate({left: '500px'}, 1000);
+					});
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button>Begin Animation</button>
+		<div class="first"></div>
+		<div class="second"></div>
+		<div class="third"></div>
+	</body>
+</html>

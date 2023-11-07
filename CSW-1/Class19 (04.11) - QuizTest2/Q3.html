@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Question 2</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<style>
+			p{ 
+				text-align: center;
+			}
+			.parent {
+				height: 500px;
+				width: 500px;
+				margin: 50px;
+				border: 2px solid black;
+			}
+			
+			.child {
+				height: 300px;
+				width: 300px;
+				border: 2px solid black;
+				margin-left: 80px;
+				margin-top: 50px;
+				position: relative;
+			}
+			
+			.grandchild {
+				height: 100px;
+				width: 100px;
+				margin-left: 20px;
+				margin-top: 150px;
+				border: 2px solid black;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="parent">
+			<p>Parent</p>
+			<div class="child">
+				<p>Child</p>
+				<div class="grandchild">
+					<p>Grandchild</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
