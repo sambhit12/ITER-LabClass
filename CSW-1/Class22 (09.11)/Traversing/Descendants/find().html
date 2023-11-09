@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Find() method</title>
+		<style>
+			.innermost * {
+				display: block;
+				border: 3px solid green;
+				color: lightgreen;
+				padding: 6px;
+				margin: 18px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("div").find("span").css({"color": "blue", "border": "3px solid blue"});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="innermost" style="width:300px;">div (current element)
+			<p>p (child)
+				<span>span (grandchild)</span>
+			</p>
+			<p>p (child)
+				<span>span (grandchild)</span>
+			</p>
+		</div>
+	</body>
+</html>
