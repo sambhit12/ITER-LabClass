@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <style>
+        body {
+            background-color: black;
+        }
+      
+        .grandparent {
+            position: relative;
+            width: 500px; 
+            height: 500px; 
+            border: 1px solid green;
+        }
+
+        .parent {
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            top: 10%;
+            left: 10%;
+            border: 1px solid red;
+        }
+
+        .child {
+            width: 50%; 
+            height: 50%; 
+            border: 1px solid blue; 
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">Child</div>
+        </div>
+    </div>
+</body>
+</html>
